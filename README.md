@@ -8,12 +8,9 @@
 - Antoine GEZE
 - Augustin OWCA
 
-## 🎯 Objectif du Projet
-Ce projet vise à développer un modèle de prédiction permettant d'identifier les facteurs influençant la réussite académique des étudiants et de prédire leur performance.
-
 **Quel est le contexte ?**
 
-En tant qu'étudiant, nous voulons avoir ce qui impact la réussite scolaire.
+En tant qu'étudiant, nous voulons avoir ce qui impact la réussite scolaire. Ce projet vise à développer un modèle de prédiction permettant d'identifier les facteurs influençant la réussite académique des étudiants et de prédire leur performance.
 
 **Quelle est la proposition de valeur ? Pourquoi ? Quels types de problèmes cela résout-il ?**
 
