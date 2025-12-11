@@ -11,6 +11,26 @@
 ## 🎯 Objectif du Projet
 Ce projet vise à développer un modèle de prédiction permettant d'identifier les facteurs influençant la réussite académique des étudiants et de prédire leur performance.
 
+Quel est le contexte ?
+
+
+
+Quelle est la proposition de valeur ? Pourquoi ? Quels types de problèmes cela résout-il ?
+
+
+
+A-t-on réellement besoin de machine learning ? Ou une simple heuristique suffit-elle ?
+
+
+
+Quels sont les différents objectifs ?
+
+
+
+Quelle est votre solution pour adresser ce problème ?
+
+
+
 ## 🚀 Installation en Local
 
 ### Étape 1 : Télécharger le Projet
