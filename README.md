@@ -11,8 +11,6 @@
 ## 🎯 Objectif du Projet
 Ce projet vise à développer un modèle de prédiction permettant d'identifier les facteurs influençant la réussite académique des étudiants et de prédire leur performance.
 
-Ca se voitttttt!!!
-
 ## 🚀 Installation en Local
 
 ### Étape 1 : Télécharger le Projet
