@@ -11,24 +11,25 @@
 ## 🎯 Objectif du Projet
 Ce projet vise à développer un modèle de prédiction permettant d'identifier les facteurs influençant la réussite académique des étudiants et de prédire leur performance.
 
-Quel est le contexte ?
+**Quel est le contexte ?**
 
+En tant qu'étudiant, nous voulons avoir ce qui impact la réussite scolaire.
 
+**Quelle est la proposition de valeur ? Pourquoi ? Quels types de problèmes cela résout-il ?**
 
-Quelle est la proposition de valeur ? Pourquoi ? Quels types de problèmes cela résout-il ?
+Notre projet apporte une meilleure compréhension des éléments qui influencent la réussite, ce qui peut aider à repérer les étudiants en difficulté et à cibler les actions d’accompagnement. Il répond au manque d’outils objectifs pour analyser la performance et propose une approche data simple pour éclairer les décisions pédagogiques.
 
+**A-t-on réellement besoin de machine learning ? Ou une simple heuristique suffit-elle ?**
 
+On va d'abord commencer par une heuristique, qui pourrait fonctionner. Mais comme il y a énormement de facteurs qui interagissent entre eux, le machine learning nous permettra d'élaborer des modèles plus complexes et plus  fiables. Il permet de capturer des relations que des règles manuelles ne pourraient pas repérer facilement
 
-A-t-on réellement besoin de machine learning ? Ou une simple heuristique suffit-elle ?
+**Quels sont les différents objectifs ?**
 
+L’objectif est de prédire la performance des étudiants et de comprendre les variables les plus importantes. Nous voulons aussi comparer plusieurs modèles simples et expliquer clairement nos résultats pour montrer comment les données peuvent aider à améliorer la réussite scolaire.
 
+**Quelle est votre solution pour adresser ce problème ?**
 
-Quels sont les différents objectifs ?
-
-
-
-Quelle est votre solution pour adresser ce problème ?
-
+Notre solution consiste à analyser le dataset, préparer les données, tester plusieurs modèles de prédiction, puis choisir celui qui fonctionne le mieux. Enfin, nous interprétons les résultats pour identifier les facteurs les plus influents et proposer une conclusion simple et compréhensible.
 
 
 ## 🚀 Installation en Local
