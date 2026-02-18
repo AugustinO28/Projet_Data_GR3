@@ -83,10 +83,14 @@ print(f"R² : {r2:.4f}")
 
 # Sauvegarde
 
-with open("model.pkl", "wb") as f:
+models_dir = script_dir
+model_out_path = os.path.join(models_dir, "model.pkl")
+rmse_out_path = os.path.join(models_dir, "rmse.pkl")
+
+with open(model_out_path, "wb") as f:
     pickle.dump(model, f)
 
-with open("rmse.pkl", "wb") as f:
+with open(rmse_out_path, "wb") as f:
     pickle.dump(rmse, f)
 
 print("\nModèle et RMSE sauvegardés avec succès.")
