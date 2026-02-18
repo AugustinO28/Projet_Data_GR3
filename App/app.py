@@ -8,21 +8,22 @@ from scipy.stats import norm
 app_dir = os.path.dirname(os.path.abspath(__file__))
 repo_root = os.path.abspath(os.path.join(app_dir, ".."))
 
-DATA_PATH = os.path.join(repo_root, "Data", "Dataset_Student_performance.csv")
-MODEL_PATH = os.path.join(repo_root, "Models", "model.pkl")
-RMSE_PATH = os.path.join(repo_root, "Models", "rmse.pkl")
+model_path = os.path.join(repo_root, "Models", "model.pkl")
+rmse_path = os.path.join(repo_root, "Models", "rmse.pkl")
+data_path = os.path.join(repo_root, "Data", "Dataset_Student_performance.csv")
 
 @st.cache_data
-def load_data(path: str) -> pd.DataFrame:
-    return pd.read_csv(path)
+def load_data():
+    return pd.read_csv(data_path)
 
-df = load_data(DATA_PATH)
+df = load_data()
 
-with open(MODEL_PATH, "rb") as f:
+with open(model_path, "rb") as f:
     model = pickle.load(f)
 
-with open(RMSE_PATH, "rb") as f:
+with open(rmse_path, "rb") as f:
     rmse = pickle.load(f)
+
 
 
 action_vars = ["Hours_Studied", "Attendance", "Tutoring_Sessions", "Sleep_Hours", "Physical_Activity"]
@@ -42,16 +43,6 @@ def get_reference_stats(df, target, band=5):
         "median": ref.median(numeric_only=True)
     }
     return stats
-
-
-model_path = os.path.join("..", "Models", "model.pkl")
-rmse_path = os.path.join("..", "Models", "rmse.pkl")
-
-with open(model_path, "rb") as f:
-    model = pickle.load(f)
-
-with open(rmse_path, "rb") as f:
-    rmse = pickle.load(f)
 
 if "show_results" not in st.session_state:
     st.session_state.show_results = False
