@@ -1,16 +1,29 @@
+import os
+import pandas as pd
 import streamlit as st
 import pickle
-import pandas as pd
 import numpy as np
 from scipy.stats import norm
-import os
+
+app_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(app_dir, ".."))
+
+DATA_PATH = os.path.join(repo_root, "Data", "Dataset_Student_performance.csv")
+MODEL_PATH = os.path.join(repo_root, "Models", "model.pkl")
+RMSE_PATH = os.path.join(repo_root, "Models", "rmse.pkl")
 
 @st.cache_data
-def load_data():
-    data_path = os.path.join("..", "Data", "Dataset_Student_performance.csv")
-    return pd.read_csv(data_path)
+def load_data(path: str) -> pd.DataFrame:
+    return pd.read_csv(path)
 
-df = load_data()
+df = load_data(DATA_PATH)
+
+with open(MODEL_PATH, "rb") as f:
+    model = pickle.load(f)
+
+with open(RMSE_PATH, "rb") as f:
+    rmse = pickle.load(f)
+
 
 action_vars = ["Hours_Studied", "Attendance", "Tutoring_Sessions", "Sleep_Hours", "Physical_Activity"]
 
