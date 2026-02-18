@@ -103,6 +103,11 @@ if st.session_state.show_results:
         "Gender": Gender
     }])
 
+    num_cols = ["Hours_Studied", "Attendance", "Sleep_Hours", "Previous_Scores", "Tutoring_Sessions", "Physical_Activity"]
+    for c in num_cols:
+        user_input[c] = pd.to_numeric(user_input[c], errors="coerce")
+        user_input[num_cols] = user_input[num_cols].fillna(0)
+
     predicted_score = float(model.predict(user_input)[0])
 
     pred_min = int(np.floor(predicted_score - rmse))
