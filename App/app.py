@@ -6,7 +6,6 @@ import numpy as np
 from scipy.stats import norm
 
 import sklearn
-st.write("scikit-learn version:", sklearn.__version__)
 
 app_dir = os.path.dirname(os.path.abspath(__file__))
 repo_root = os.path.abspath(os.path.join(app_dir, ".."))
